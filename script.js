@@ -56,7 +56,7 @@ function atualizaMedia() {
   let media = totalNotas / totalProvas
 
   let notaFinal = document.getElementById('final-grade')
-  notaFinal.innerHTML = media
+  notaFinal.innerHTML = media.toFixed(2)
 
   let resultado = document.getElementById('resultado')
   resultado.innerHTML = `${media >= 7 ? aprovado : reprovado}`
